@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-pm2-cluster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:rmq": "docker-compose -f rabbitmq-dockercompose.yml up --build",
+    "down:rmq": "docker-compose -f rabbitmq-dockercompose.yml down"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "perf_hooks": "0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
